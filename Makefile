@@ -1324,7 +1324,7 @@ autoksyms_recursive: descend
 
 
 	
-
+$(call cmd,autoksyms_h)
 ARCH_POSTLINK := $(wildcard $(srctree)/arch/$(SRCARCH)/Makefile.postlink)
 
 # Final link of vmlinux with optional arch pass after final link
