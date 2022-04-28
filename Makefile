@@ -1311,8 +1311,24 @@ ifdef CONFIG_TRIM_UNUSED_KSYMS
 # we have to build modules as well to determine what those symbols are.
 # (this can be evaluated only once include/config/auto.conf has been included)
 KBUILD_MODULES := 1
+autoksyms_recursive: descend modules.order
+
+	$(Q)$(CONFIG_SHELL) $(srctree)/scripts/adjust_autoksyms.sh \	  "$(MAKE) -f $(srctree)/Makefile vmlinux"
+
+endif
 
 autoksyms_recursive: descend 
+
+autoksyms_h := $(if $(CONFIG_TRIM_UNUSED_KSYMS), include/generated/autoksyms.h)
+
+quiet_cmd_autoksyms_h = GEN     $@
+
+      cmd_autoksyms_h = mkdir -p $(dir $@); \
+
+			$(CONFIG_SHELL) $(srctree)/scripts/gen_autoksyms.sh $@
+
+$(autoksyms_h)
+
 
 
 
