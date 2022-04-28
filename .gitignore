@@ -102,6 +102,7 @@ modules.order
 #
 /include/config/
 /include/ksym/
+/include/generated/
 /arch/*/include/generated/
 
 # stgit generated dirs
