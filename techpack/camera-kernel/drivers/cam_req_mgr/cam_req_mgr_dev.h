@@ -7,7 +7,6 @@
 #ifndef _CAM_REQ_MGR_DEV_H_
 #define _CAM_REQ_MGR_DEV_H_
 
-#include "media/cam_req_mgr.h"
 /**
  * struct cam_req_mgr_device - a camera request manager device
  *
