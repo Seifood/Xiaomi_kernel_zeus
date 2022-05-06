@@ -16,8 +16,6 @@
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-ioctl.h>
-#include <media/cam_req_mgr.h>
-#include <media/cam_defs.h>
 #include <linux/list_sort.h>
 
 #include "cam_req_mgr_dev.h"
