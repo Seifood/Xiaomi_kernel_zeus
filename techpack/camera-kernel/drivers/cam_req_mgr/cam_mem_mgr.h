@@ -12,7 +12,6 @@
 #if IS_REACHABLE(CONFIG_DMABUF_HEAPS)
 #include <linux/dma-heap.h>
 #endif
-#include <media/cam_req_mgr.h>
 #include "cam_mem_mgr_api.h"
 
 /* Enum for possible mem mgr states */
