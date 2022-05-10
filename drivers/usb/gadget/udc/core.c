@@ -1195,7 +1195,7 @@ static inline void usb_gadget_enable_async_callbacks(struct usb_udc *udc)
 
         struct usb_gadget *gadget = udc->gadget;
 
-        if (gadget->ops->udc_async_callbacks)
+        if (gadget->ops->
                 gadget->ops->udc_async_callbacks(gadget, false);
 }
 
