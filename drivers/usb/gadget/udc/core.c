@@ -1191,7 +1191,7 @@ static inline void usb_gadget_enable_async_callbacks(struct usb_udc *udc)
                 gadget->ops->udc_async_callbacks(gadget, true);
 }
 
-static inline void usb_gadget_disable_async_callbacks(struct usb_udc *udc)
+static inline void us
 {
         struct usb_gadget *gadget = udc->gadget;
 
