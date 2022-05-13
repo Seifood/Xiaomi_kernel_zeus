@@ -1191,11 +1191,11 @@ static inline void usb_gadget_enable_async_callbacks(struct usb_udc *udc)
                 gadget->ops->udc_async_callbacks(gadget, true);
 }
 
+static inline void usb_gadget_disable_async_callbacks(struct usb_udc *udc)
+{
+        struct usb_gadget *gadget = udc->gadget;
 
-
-
-
-
+        if (gadget->ops->udc_async_callbacks)
                 gadget->ops->udc_async_callbacks(gadget, false);
 }
 
@@ -1209,7 +1209,7 @@ static inline void usb_gadget_enable_async_callbacks(struct usb_udc *udc)
  *
  * This routine will always be called in process context.
  */
-
+static inline void usb_gadget_enable_async_callbacks(struct usb_udc *udc)
 {
 	struct usb_gadget *gadget = udc->gadget;
 
