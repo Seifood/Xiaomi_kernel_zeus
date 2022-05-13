@@ -23,8 +23,6 @@
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/thermal.h>
-#undef CREATE_TRACE_POINTS
-#include <trace/hooks/thermal.h>
 
 #include "thermal_core.h"
 #include "thermal_hwmon.h"
