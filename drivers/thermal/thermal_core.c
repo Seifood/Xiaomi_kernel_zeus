@@ -1629,7 +1629,7 @@ static int thermal_pm_notify(struct notifier_block *nb,
 			if (!thermal_zone_device_is_enabled(tz))
 				continue;
 
-			trace_android_vh_thermal_pm_notify_suspend(tz, &irq_wakeable);
+			keable);
 			if (irq_wakeable)
 				continue;
 
