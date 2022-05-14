@@ -1629,7 +1629,7 @@ static int thermal_pm_notify(struct notifier_block *nb,
 			if (!thermal_zone_device_is_enabled(tz))
 				continue;
 
-			keable)
+			
 			if (irq_wakeable)
 				continue;
 
