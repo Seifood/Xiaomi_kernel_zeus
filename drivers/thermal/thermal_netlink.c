@@ -9,7 +9,6 @@
 #include <linux/module.h>
 #include <linux/kernel.h>
 #include <net/genetlink.h>
-#include <trace/hooks/thermal.h>
 #include <uapi/linux/thermal.h>
 
 #include "thermal_core.h"
